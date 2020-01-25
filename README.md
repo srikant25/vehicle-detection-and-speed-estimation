@@ -1,9 +1,9 @@
 # vehicle-detection-and-speed-estimation
-here we can detect the car and estimate the velocity of that car
+here we can detect the car and estimate the velocity of that car\\
 Algorithm
 step1- load the car video
-step2- for vehicle detection pretrained haar casaded classier.
-step3- once a car is detected ,using the cascadeclassier() function on the haar
+step2- for vehicle detection pretrained haar casaded classier.
+step3- once a car is detected ,using the cascadeclassier() function on the haar
 cascade devoloped
 step4- vehicle tracking(assigning IDs to vehicle) we use corelation tracker from
 dlib library.

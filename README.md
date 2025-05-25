@@ -1,7 +1,9 @@
-🚗 Vehicle Detection and Speed Estimation
+🚗  **Vehicle Detection and Speed Estimation**
+
 This project detects moving vehicles in a video and estimates their speed using computer vision techniques. It leverages Haar cascade classifiers for detection and Dlib correlation trackers for tracking. Speed is estimated based on the time taken to travel a known distance in the video frame.
 
-📌 Features
+📌 **Features**
+
 Real-time vehicle detection using Haar cascades
 
 Object tracking with unique IDs using Dlib
@@ -10,7 +12,8 @@ Speed estimation based on pixel-to-meter conversion
 
 Lightweight, beginner-friendly Python implementation
 
-📽️ Algorithm Overview
+📽️ **Algorithm Overview**
+
 Load the Video: Read the input video using OpenCV.
 
 Vehicle Detection: Apply a pre-trained Haar cascade classifier to detect vehicles.
@@ -25,38 +28,11 @@ Stop Timer: Stop the timer when the vehicle reaches the end of the detection zon
 
 Speed Estimation: Estimate speed using:
 
-Speed (m/s)
-=
-Distance (m)
-Time (s)
-Speed (m/s)= 
-Time (s)
-Distance (m)
+Speed (m/s) = Distance (m)/ Time (s)
+
 ​
  
-🛠️ Installation
-Clone this repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/vehicle-detection-and-speed-estimation.git
-cd vehicle-detection-and-speed-estimation
-Install required dependencies:
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Requirements:
 
-OpenCV
-
-Dlib
-
-imutils
-
-numpy
-
-Make sure you have a working webcam or use a sample video file.
 

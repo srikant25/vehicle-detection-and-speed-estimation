@@ -1,18 +1,62 @@
-# vehicle-detection-and-speed-estimation
-here we can detect the car and estimate the velocity of that car\\
-Algorithm
-step1- load the car video
-step2- for vehicle detection pretrained haar casaded classier.
-step3- once a car is detected ,using the cascadeclassier() function on the haar
-cascade devoloped
-step4- vehicle tracking(assigning IDs to vehicle) we use corelation tracker from
-dlib library.
-step5- now time is started which was initialize to 0
-step6- Using the ratio in the image for each cm travelled by the detected image
-and real-time distance in meters, the actual distance covered by the car is cal-
-culated.
-step7- As soon as the car reaches the center of the detection window whose
-distance is already known to us the time is stopped.
+🚗 Vehicle Detection and Speed Estimation
+This project detects moving vehicles in a video and estimates their speed using computer vision techniques. It leverages Haar cascade classifiers for detection and Dlib correlation trackers for tracking. Speed is estimated based on the time taken to travel a known distance in the video frame.
 
-step8- Now the actual distance calculated is divided by the time calculated
-and velocity is obtained.
+📌 Features
+Real-time vehicle detection using Haar cascades
+
+Object tracking with unique IDs using Dlib
+
+Speed estimation based on pixel-to-meter conversion
+
+Lightweight, beginner-friendly Python implementation
+
+📽️ Algorithm Overview
+Load the Video: Read the input video using OpenCV.
+
+Vehicle Detection: Apply a pre-trained Haar cascade classifier to detect vehicles.
+
+Object Tracking: Use Dlib’s correlation tracker to assign and maintain vehicle IDs across frames.
+
+Time Tracking: Start a timer as soon as a vehicle enters the detection zone.
+
+Distance Estimation: Calculate the real-world distance traveled using pixel-to-meter scaling.
+
+Stop Timer: Stop the timer when the vehicle reaches the end of the detection zone.
+
+Speed Estimation: Estimate speed using:
+
+Speed (m/s)
+=
+Distance (m)
+Time (s)
+Speed (m/s)= 
+Time (s)
+Distance (m)
+​
+ 
+🛠️ Installation
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/vehicle-detection-and-speed-estimation.git
+cd vehicle-detection-and-speed-estimation
+Install required dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Requirements:
+
+OpenCV
+
+Dlib
+
+imutils
+
+numpy
+
+Make sure you have a working webcam or use a sample video file.
+
